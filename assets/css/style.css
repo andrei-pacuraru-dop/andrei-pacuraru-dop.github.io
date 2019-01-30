@@ -1,0 +1,193 @@
+@import url("https://use.typekit.net/luh3lwb.css");
+
+@font-face {
+  font-family: 'tungsten-condensed';
+  src: 
+    url('../fonts/TungstenCondensed-Medium.eot?#iefix') format('embedded-opentype'), 
+    url('../fonts/TungstenCondensed-Medium.otf') format('opentype'), 
+    url('../fonts/TungstenCondensed-Medium.woff') format('woff'), 
+    url('../fonts/TungstenCondensed-Medium.ttf') format('truetype'), 
+    url('../fonts/TungstenCondensed-Medium.svg#TungstenCondensed-Medium') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Typography
+ * ----------------------------------------------
+ */
+
+h1, h1 a {
+  font-family: baskerville-display-pt;
+  letter-spacing: 6px;
+  display: table;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-top: 80px;
+}
+
+h2, h2 a {
+  font-family: tungsten-condensed;
+  letter-spacing: 5px;
+  display: table;
+  font-size: 28px;
+}
+
+body, p, li, span, ol, ul, table, a {
+  font-size: 18px;
+  font-family: futura-pt;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+footer {
+  font-size: 18px;
+}
+
+main p a, main li a {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 900;
+}
+
+nav .page-link {
+  font-family: futura-pt-bold;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.logo h1 a {
+  letter-spacing: 3px;
+  font-size: 24px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.logo h2 a {
+  line-height: 20px; 
+  margin-bottom: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo h1, .logo h2 {
+  margin: 0;
+}
+
+
+
+/* Layout
+ * ----------------------------------------------
+ */
+
+/* reset body */
+body {
+  margin: 0;
+}
+
+header {
+  padding: 0 25px;
+}
+
+nav {
+  margin-top: 28px;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  float: left;
+}
+
+
+/* Styles
+ * ----------------------------------------------
+ */
+body {
+  background: #fff;
+}
+
+h1, h1 a, h2, h2 a, h3, h3 a {
+  color: #141213;
+}
+
+p, a {
+  color: #262425;
+}
+
+header, footer {
+  background-color: #fdfbfc;
+}
+
+.logo h1, .logo h1 a {
+  color: #262425;
+} 
+
+.logo h2, .logo h2 a, nav a, .site-nav .page-link {
+  color: #474546;
+}
+
+
+
+
+/* Video gallery
+ * ----------------------------------------------
+ */
+
+.video-gallery {
+  width: 100%;
+	margin-top: 60px;
+  margin-bottom: 120px;
+}
+
+.video-gallery .inner {
+  width: 100%;
+  display: flex;
+  background-color: #000;
+  margin-bottom: 120px;
+}
+
+.video-gallery a {	
+	flex: 1;
+}
+
+@media (min-width:768px) {
+  .video-gallery .inner {
+    flex-direction: row;
+  }
+
+  .video-gallery a {	
+  	width: 33.33333%;
+  }
+}
+
+@media (max-width:767px) {
+  .video-gallery .inner, .video-gallery a {	
+  	width: 100%;
+    display: block;
+  }
+}
+
+.video-gallery a img {
+	width: 100%;
+}
+
+.video-gallery a:hover {  
+  filter: brightness(1.35);
+}
+
