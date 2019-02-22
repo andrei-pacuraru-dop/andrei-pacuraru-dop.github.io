@@ -4,29 +4,18 @@ title: Music Videos
 permalink: /music-videos/
 ---
 
-<div class="wrapper">
-<h1 class="text-center">{{ page.title }}</h1>
-<p>&nbsp;</p>
-</div>
-
 <div class="video-gallery">
 {% for video in site.music %}
-	{% assign mod = forloop.index0 | modulo : 3 %}
-    {% if mod == 0 %}
+  {% assign mod = forloop.index0 | modulo : 3 %}
+  {% if mod == 0 %}
 <div class="inner">
-	{% endif %}
-    {% if video.youtube_id %}
-<a href="https://www.youtube.com/watch?v={{ video.youtube_id }}">
-   <img src="{{ video.image }}">
+  {% endif %}
+<a href="{{ video.url }}">
+  <img src="{{ video.image }}">
 </a>
-    {% elsif video.vimeo_id %}
-<a href="https://vimeo.com/{{ video.vimeo_id }}">
-   <img src="{{ video.image }}">
-</a>
-    {% endif %}
-    {% if mod == 2 %}
+  {% if mod == 2 %}
 </div>
-	{% endif %}
+  {% endif %}
 {% endfor %}
 </div>
 

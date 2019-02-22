@@ -22,6 +22,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -29,10 +30,40 @@ github_username:  jekyll
 # Add .md files for each collection item in collection subfolders
 collections_dir: videos
 collections:
-    - narrative
-    - commercial
-    - music
-    - corporate
+    narrative:
+        output: true
+    commercial:
+        output: true
+    music:
+        output: true
+
+# Specify default template for collections
+defaults:
+  - scope:
+      path: ""
+      type: "music"
+    values:
+      layout: "video-item"
+  - scope:
+      path: ""
+      type: "narrative"
+    values:
+      layout: "video-item"
+  - scope:
+      path: ""
+      type: "commercial"
+    values:
+      layout: "video-item"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 
 # Build settings
 markdown: kramdown

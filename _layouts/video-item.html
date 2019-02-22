@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article>
+
+  <div class="single-video-wrapper">
+      {% if page.youtube_id %}
+      <iframe class="video-embed" src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      {% elsif page.vimeo_id %}
+      <iframe class="video-embed" src="https://player.vimeo.com/video/{{ page.vimeo_id }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% endif %}
+  </div>
+  
+  <h1 class="video-item-title text-center">{{ page.title }}</h1>
+    <div class="wrapper">
+    {{ content }}
+  </div>
+
+</article>
+
+
