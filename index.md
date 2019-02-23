@@ -1,6 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
 ---
+
+<div class="video-full" data-src="http://shepherdtone.co.uk/media/still.jpg" data-video="/media/video.mp4" data-placeholder="http://shepherdtone.co.uk/media/still1.jpg">
+<video preload="auto" autoplay="autoplay" muted="muted" loop="" poster="http://shepherdtone.co.uk/media/still1.jpg"><source src="http://shepherdtone.co.uk/media/video.ogv" type="video/ogg">
+</video>
+</div>

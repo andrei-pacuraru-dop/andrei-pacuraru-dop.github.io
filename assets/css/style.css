@@ -18,21 +18,18 @@
  * ----------------------------------------------
  */
 
-h1, h1 a {
-  font-family: baskerville-display-pt;
-  letter-spacing: 6px;
-  display: table;
-  font-size: 48px;
-  text-transform: uppercase;
-  margin-top: 80px;
-}
-
-h2, h2 a {
+h1, h1 a, h2, h2 a {
   font-family: tungsten-condensed;
   letter-spacing: 5px;
   display: table;
-  font-size: 28px;
+  text-transform: uppercase;
 }
+
+h1, h1 a {
+  font-size: 40px;
+  margin-top: 30px;
+}
+
 
 body, p, li, span, ol, ul, table, a {
   font-size: 18px;
@@ -54,14 +51,15 @@ strong {
 }
 
 nav .page-link {
-  font-family: futura-pt-bold;
-  font-variant: small-caps;
+  font-family: futura-pt;
   letter-spacing: 1px;
   font-size: 18px;
 }
 
 .logo h1 a {
-  letter-spacing: 3px;
+  font-family: futura-pt;
+  text-transform: none;
+  letter-spacing: 2px;
   font-size: 24px;
   line-height: 20px;
   margin-top: 20px;
@@ -70,10 +68,13 @@ nav .page-link {
 }
 
 .logo h2 a {
+  font-family: tungsten-condensed;
   line-height: 20px; 
   margin-bottom: 25px;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 5.5px;
+  font-size: 28px;
 }
 
 .logo h1, .logo h2 {
@@ -91,8 +92,8 @@ body {
   margin: 0;
 }
 
-header {
-  padding: 0 25px;
+header, footer {
+  padding: 0 7.5vw;
 }
 
 nav {
@@ -121,27 +122,31 @@ nav {
  * ----------------------------------------------
  */
 body {
-  background: #fff;
+  background: #000;
 }
 
 h1, h1 a, h2, h2 a, h3, h3 a {
-  color: #141213;
+  color: #e4e2e3;
 }
 
-p, a {
-  color: #262425;
+p, a, a:hover, a:visited {
+  color: #d6d4d5;
+}
+
+li a {
+  text-decoration: none;
 }
 
 header, footer {
-  background-color: #fdfbfc;
+  background-color: transparent;
 }
 
 .logo h1, .logo h1 a {
-  color: #262425;
+  color: #d6d4d5;
 } 
 
 .logo h2, .logo h2 a, nav a, .site-nav .page-link {
-  color: #474546;
+  color: #c7c5c6;
 }
 
 .site-header, .site-footer {
@@ -149,13 +154,23 @@ header, footer {
 }
 
 .site-footer {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 
 /* Video gallery
  * ----------------------------------------------
  */
+.video-full {
+  margin-top: 20px;
+  width: 85vw;
+  margin-left: 7.5vw;
+}
+
+.video-full video {
+  width: 100%;
+  height: 100%;
+}
 
 .video-gallery {
   width: 100%;
@@ -202,12 +217,6 @@ header, footer {
 /* Video item
  * ----------------------------------------------
  */
-h1.video-item-title {
-  font-family: tungsten-condensed;
-  font-size: 40px;
-  letter-spacing: 4px;
-}
-
 
 .single-video-wrapper {
   width: 85%;

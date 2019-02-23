@@ -4,12 +4,14 @@ layout: default
 
 <article>
 
-  <div>
-
-	<h1 class="text-center">{{ page.title }}</h1>
-	<p>&nbsp;</p>
-
-    {{ content }}
+  <div class="video-full" data-src="{{ page.placeholder }}" data-video="{{ page.embed_video_mp4 }}" data-placeholder="{{ page.placeholder }}">
+    <video preload="auto" autoplay="autoplay" muted="muted" loop="" poster="{{ page. placeholder }}"><source src="{{ page.embed_video_ogg }}" type="video/ogg">
+    </video>
   </div>
+
+  <h1 class="text-center">{{ page.title }}</h1>
+  <p>&nbsp;</p>
+
+  {{ content }}
 
 </article>
