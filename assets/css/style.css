@@ -157,6 +157,19 @@ header, footer {
   margin-top: 50px;
 }
 
+ul.social {
+  margin-left: 0;
+}
+ul.social li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 25px;
+  box-sizing: border-box;
+  text-align: center;
+}
+ul.social li a {
+  font-size: 14px;
+}
 
 /* Video gallery
  * ----------------------------------------------
