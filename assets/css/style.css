@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: 'tungsten-condensed';
-  src: 
-    url('../fonts/TungstenCondensed-Medium.eot?#iefix') format('embedded-opentype'), 
-    url('../fonts/TungstenCondensed-Medium.otf') format('opentype'), 
-    url('../fonts/TungstenCondensed-Medium.woff') format('woff'), 
-    url('../fonts/TungstenCondensed-Medium.ttf') format('truetype'), 
+  src:
+    url('../fonts/TungstenCondensed-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/TungstenCondensed-Medium.otf') format('opentype'),
+    url('../fonts/TungstenCondensed-Medium.woff') format('woff'),
+    url('../fonts/TungstenCondensed-Medium.ttf') format('truetype'),
     url('../fonts/TungstenCondensed-Medium.svg#TungstenCondensed-Medium') format("svg");
   font-weight: normal;
   font-style: normal;
@@ -69,7 +69,7 @@ nav .page-link {
 
 .logo h2 a {
   font-family: tungsten-condensed;
-  line-height: 20px; 
+  line-height: 20px;
   margin-bottom: 25px;
   text-decoration: none;
   text-transform: uppercase;
@@ -126,15 +126,15 @@ article {
  * ----------------------------------------------
  */
 body {
-  background: #000;
+  background: #fff;
 }
 
 h1, h1 a, h2, h2 a, h3, h3 a {
-  color: #e4e2e3;
+  color: #141213;
 }
 
 p, a, a:hover, a:visited {
-  color: #d6d4d5;
+  color: #464445;
 }
 
 li a {
@@ -146,11 +146,11 @@ header, footer {
 }
 
 .logo h1, .logo h1 a {
-  color: #d6d4d5;
-} 
+  color: #464445;
+}
 
 .logo h2, .logo h2 a, nav a, .site-nav .page-link {
-  color: #c7c5c6;
+  color: #272526;
 }
 
 .site-header, .site-footer {
@@ -191,7 +191,7 @@ ul.social li a {
 
 .video-gallery {
   width: 85%;
-	margin-top: 60px;
+  margin-top: 60px;
   margin-bottom: 120px;
   margin-left: auto;
   margin-right: auto;
@@ -201,11 +201,10 @@ ul.social li a {
 .video-gallery .inner {
   width: 100%;
   display: flex;
-  background-color: #000;
   margin-bottom: 120px;
 }
 
-.video-gallery a {	
+.video-gallery a {
 	flex: 1;
 }
 
@@ -214,13 +213,13 @@ ul.social li a {
     flex-direction: row;
   }
 
-  .video-gallery a {	
+  .video-gallery a {
   	width: 33.33333%;
   }
 }
 
 @media (max-width:767px) {
-  .video-gallery .inner, .video-gallery a {	
+  .video-gallery .inner, .video-gallery a {
   	width: 100%;
     display: block;
   }
@@ -230,7 +229,7 @@ ul.social li a {
 	width: 100%;
 }
 
-.video-gallery a:hover {  
+.video-gallery a:hover {
   filter: brightness(1.35);
 }
 
