@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: Narrative Film
-permalink: /music
+permalink: /narrative
 embed_video_mp4: http://shepherdtone.co.uk/media/video.mp4
 embed_video_ogg: http://shepherdtone.co.uk/media/video.ogv
 placeholder: http://shepherdtone.co.uk/media/still1.jpg

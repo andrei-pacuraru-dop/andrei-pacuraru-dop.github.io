@@ -1,6 +1,6 @@
 ---
 layout: gallery
-title: Music Videos
+title: Commercial
 permalink: /commercial
 embed_video_mp4: http://shepherdtone.co.uk/media/video.mp4
 embed_video_ogg: http://shepherdtone.co.uk/media/video.ogv
