@@ -236,6 +236,11 @@ ul.social li a {
 /* Video item
  * ----------------------------------------------
  */
+.cinema-mode {
+  width: 100%;
+  height: auto;
+  background: #000;
+}
 
 .single-video-wrapper {
   width: 85%;
@@ -250,6 +255,11 @@ ul.social li a {
 @media (max-width: 899px) {
   .single-video-wrapper {
     width: 100%;
+    padding-bottom: 43%;
+  }
+
+  .cinema-mode {
+    background: #fff;
   }
 }
 
