@@ -1,7 +1,7 @@
 ---
 layout: gallery
 title: Music Videos
-permalink: /music-videos/
+permalink: /music
 embed_video_mp4: http://shepherdtone.co.uk/media/video.mp4
 embed_video_ogg: http://shepherdtone.co.uk/media/video.ogv
 placeholder: http://shepherdtone.co.uk/media/still1.jpg
@@ -14,7 +14,7 @@ placeholder: http://shepherdtone.co.uk/media/still1.jpg
 <div class="inner">
   {% endif %}
 <a href="{{ video.url }}">
-  <img src="{{ video.image }}">
+  <img src="{{ video.thumb }}">
 </a>
   {% if mod == 2 %}
 </div>
