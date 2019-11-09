@@ -6,18 +6,55 @@ layout: default
 
   <div class="cinema-mode">
     <div class="single-video-wrapper">
-        {% if page.youtube_id %}
-        <iframe class="video-embed" src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        {% elsif page.vimeo_id %}
-        <iframe class="video-embed" src="https://player.vimeo.com/video/{{ page.vimeo_id }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        {% endif %}
+      {% if page.youtube_id %}
+      <iframe class="video-embed" src="https://www.youtube.com/embed/{{ page.youtube_id }}?rel=0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% elsif page.vimeo_id %}
+      <iframe class="video-embed" src="https://player.vimeo.com/video/{{ page.vimeo_id }}" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      {% else %}
+      <img src="{{ page.placeholder }}">
+      {% endif %}
     </div>
   </div>
 
-  <h1 class="video-item-title text-center">{{ page.title }}</h1>
   <div class="wrapper">
-    {{ content }}
+    <h1 class="video-item-title text-center">{{ page.title }}</h1>
+    <div class="video-item-body">
+      <p>
+      Directed by: {{ page.dir }}<br/>
+      Producer: {{ page.prod }}<br/>
+      Production company: {{ page.comp }}</br>
+
+      {% if page.agency %}
+          Agency: {{ page.agency }}<br/>
+      {% endif %}
+
+      {% if page.awards %}
+          <br/>
+          {{ page.awards }}<br/>
+      {% endif %}
+
+      {% if page.content %}
+        <br/>
+        {{ content }}
+      {% endif %}
+      </p>
+    </div>
   </div>
+
+   <div class="image-gallery">
+     {% for img in page.stills %}
+       {% assign mod = forloop.index0 | modulo : 2 %}
+       {% if mod == 0 %}
+       <div class="inner">
+       {% endif %}
+       <a href="">
+          <img src="{{ img }}">
+       </a>
+       {% if mod == 1 %}
+       </div>
+       {% endif %}
+     {% endfor %}
+   </div>
 
 </article>
 
