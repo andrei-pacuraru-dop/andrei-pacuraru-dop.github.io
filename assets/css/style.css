@@ -113,9 +113,13 @@ nav {
 
 @media (max-width: 769px) {
   .wrapper {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
+}
+
+.wrapper {
+  max-width: calc(1200px - (30px * 2));
 }
 
 article {
@@ -177,13 +181,13 @@ header, footer {
 }
 
 ul.social {
-  width: 300px;
+  width: 360px;
   margin: 0 auto;
 }
 ul.social li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 35px;
+  margin: 0 30px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -271,11 +275,11 @@ ul.social li {
     flex-direction: row;
   }
 
-  .video-gallery a {
+  .video-gallery a, .video-gallery div {
   	width: 33.33333%;
   }
 
-  .image-gallery a {
+  .image-gallery a, .image-gallery div {
     width: 50%;
   }
 
@@ -341,6 +345,43 @@ ul.social li {
 /* Page content layout
  * ----------------------------------------------
  */
+.about-page div {
+   display: inline-block;
+   padding: 10px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin-top: 80px;
+}
+
+.about-page img {
+  max-width: 80%;
+}
+
+.about-page h1 {
+  margin-top: 0;
+  line-height: 40px;
+}
+
+@media (max-width: 899px) {
+  .about-page div {
+    width: 100%;
+  }
+  .about-page img {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .about-page .left {
+    width: 50%;
+  }
+  .about-page .right {
+    width: 49%;
+  }
+  .about-page img {
+    float: right;
+  }
+}
+
 .video-gallery-body h1 {
   margin-top: 60px;
   margin-bottom: 0;
