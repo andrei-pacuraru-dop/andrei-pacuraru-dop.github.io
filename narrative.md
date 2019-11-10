@@ -1,14 +1,13 @@
 ---
 layout: gallery
-title: Music Videos
-permalink: /music
-embed_video_mp4: http://shepherdtone.co.uk/media/video.mp4
-embed_video_ogg: http://shepherdtone.co.uk/media/video.ogv
-placeholder: http://shepherdtone.co.uk/media/still1.jpg
+title: Narrative Film
+permalink: /narrative
+vimeo_id: 332521900
+placeholder: /assets/img/full/Ishtar_FS.png
 ---
 
 <div class="video-gallery">
-{% for video in site.music reversed %}
+{% for video in site.narrative %}
   {% assign mod = forloop.index0 | modulo : 3 %}
   {% if mod == 0 %}
 <div class="inner">
