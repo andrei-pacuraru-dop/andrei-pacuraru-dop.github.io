@@ -177,17 +177,15 @@ header, footer {
 }
 
 ul.social {
-  margin-left: 0;
+  width: 300px;
+  margin: 0 auto;
 }
 ul.social li {
   list-style-type: none;
   display: inline-block;
-  margin: 0 25px;
+  margin: 0 35px;
   box-sizing: border-box;
   text-align: center;
-}
-ul.social li a {
-  font-size: 14px;
 }
 
 /* Full-width video & images
