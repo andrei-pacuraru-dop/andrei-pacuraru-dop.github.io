@@ -6,7 +6,7 @@ placeholder: /assets/img/full/HD_FS.png
 ---
 
 <div class="video-gallery">
-{% for video in site.commercial %}
+{% for video in site.commercial reversed %}
   {% assign mod = forloop.index0 | modulo : 3 %}
   {% if mod == 0 %}
 <div class="inner">
