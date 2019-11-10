@@ -2,6 +2,7 @@
 layout: gallery
 title: Commercial
 permalink: /commercial
+menu: commercial
 placeholder: /assets/img/full/HD_FS.png
 ---
 

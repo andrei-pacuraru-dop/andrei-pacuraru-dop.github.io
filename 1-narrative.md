@@ -2,12 +2,13 @@
 layout: gallery
 title: Narrative Film
 permalink: /narrative
+menu: narrative
 vimeo_id: 332521900
 placeholder: /assets/img/full/Ishtar_FS.png
 ---
 
 <div class="video-gallery">
-{% for video in site.narrative %}
+{% for video in site.narrative reversed %}
   {% assign mod = forloop.index0 | modulo : 3 %}
   {% if mod == 0 %}
 <div class="inner">

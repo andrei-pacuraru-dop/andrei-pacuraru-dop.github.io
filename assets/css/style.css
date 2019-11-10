@@ -69,6 +69,15 @@ nav .page-link {
   font-size: 18px;
 }
 
+nav .current {
+  padding: 7px 15px;
+  border: 1px solid #000;
+}
+
+nav a.current:hover {
+  text-decoration: none;
+}
+
 .logo h1, .logo h2 {
   margin: 0;
 }
@@ -185,9 +194,10 @@ ul.social {
   margin: 0 auto;
 }
 ul.social li {
+  width: 24px;
   list-style-type: none;
   display: inline-block;
-  margin: 0 30px;
+  margin: 0 25px;
   box-sizing: border-box;
   text-align: center;
 }

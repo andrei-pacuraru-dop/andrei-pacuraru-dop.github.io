@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Contact
-permalink: /contact/
+permalink: /contact
+menu: contact
 ---
 
 <article>
