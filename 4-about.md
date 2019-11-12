@@ -18,7 +18,7 @@ menu: about
 
   <p>Growing up in the cultural tapestry that is the shore of the Black Sea, Andrei was inspired to seek out an eclectic array of artistic movements, being equally fond of the works of Andrei Tarkovsky, Lucian Pintilie and Sergei Parajanov  on one hand and Terry Gilliam, Ridley Scott and Mike Leigh on the other: filmmakers who seem to have little in common yet somehow manage to put on screen our common humanity.</p>
   
-    <p>Complete dedication and attention to detail are the two characteristics that guide Andrei’s approach both to life and to filmmaking. This has led to his work being screened around the world, garnering multiple awards thanks to tightly-knit relationships with his collaborators and a continuous drive to render the extraordinary in the mundane, the engaging moments in day-to-day life.</p>
+   <p>Complete dedication and attention to detail are the two characteristics that guide Andrei’s approach both to life and to filmmaking. This has led to his work being screened around the world, garnering multiple awards thanks to tightly-knit relationships with his collaborators and a continuous drive to render the extraordinary in the mundane, the engaging moments in day-to-day life.</p>
   
   </div>
 </div>
