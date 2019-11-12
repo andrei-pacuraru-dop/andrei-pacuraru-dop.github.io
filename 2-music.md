@@ -8,7 +8,7 @@ placeholder: http://shepherdtone.co.uk/media/still1.jpg
 ---
 
 <div class="video-gallery">
-{% for video in site.narrative reversed %}
+{% for video in site.music reversed %}
   {% assign mod = forloop.index0 | modulo : 3 %}
   {% if mod == 0 %}
 <div class="inner">
