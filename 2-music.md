@@ -3,8 +3,7 @@ layout: gallery
 title: Music Videos
 permalink: /music
 menu: music
-embed_video_mp4: http://shepherdtone.co.uk/media/video.mp4
-embed_video_ogg: http://shepherdtone.co.uk/media/video.ogv
+vimeo_id: 361131297
 placeholder: http://shepherdtone.co.uk/media/still1.jpg
 ---
 
