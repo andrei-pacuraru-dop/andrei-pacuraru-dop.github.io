@@ -3,7 +3,7 @@ title: Butchers Kill Lambs
 dir: Paul O’Brien
 prod: Irina Alexiu
 comp: Gutsy
-vimeo_id: 332451870/9fda59e59d
+vimeo_id: 332451870
 thumb: /assets/img/thumbs/Butcher_T.jpg
 placeholder: /assets/img/full/Butcher_FS.png
 stills:
