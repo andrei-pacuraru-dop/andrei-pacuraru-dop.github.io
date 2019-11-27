@@ -20,6 +20,7 @@
             </label>
 
             <div class="trigger">
+              <a class={% if page.home %}"page-link current"{% else %}"page-link"{% endif %} href="/">home</a>
               {%- for path in page_paths -%}
                 {%- assign my_page = site.pages | where: "path", path | first -%}
                 {%- if my_page.menu -%}
