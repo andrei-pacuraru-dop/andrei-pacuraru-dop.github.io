@@ -152,31 +152,6 @@ strong {
   }
 }
 
-.logo h1, .logo h2 {
-  margin: 0;
-}
-
-.logo h1 a {
-  font-family: tungsten-condensed;
-  line-height: 20px;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 3.4px;
-  font-size: 34px;
-}
-
-.logo h2 a {
-  font-family: montserrat;
-  text-transform: lowercase;
-  font-variant: small-caps;
-  letter-spacing: 1.5px;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 22px;
-  text-decoration: none;
-}
-
-
 /* Layout
  * ----------------------------------------------
  */
@@ -221,8 +196,7 @@ article {
 
 .logo {
   float: left;
-  padding-top: 15px;
-  padding-left: 40px;
+  padding-top: 28px;
 }
 
 .site-nav {
