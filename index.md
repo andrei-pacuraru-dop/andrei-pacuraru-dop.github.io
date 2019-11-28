@@ -1,4 +1,5 @@
 ---
+home: 1
 ---
 
 <article>
