@@ -186,6 +186,10 @@ body {
   margin: 0;
 }
 
+.hide {
+  display: none;
+}
+
 header, footer {
   padding: 0 7.5vw;
 }
@@ -217,6 +221,8 @@ article {
 
 .logo {
   float: left;
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
 .site-nav {
