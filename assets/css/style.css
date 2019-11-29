@@ -138,6 +138,7 @@ strong {
     letter-spacing: 1px;
     font-size: 18px;
     margin-left: 10px !important;
+    border: 1px solid #fff;
   }
   nav .page-link:not(:last-child) {
     margin-right: 10px !important;
