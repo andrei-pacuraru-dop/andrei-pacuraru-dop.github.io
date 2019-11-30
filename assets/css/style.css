@@ -178,13 +178,15 @@ nav {
 }
 
 ul.social {
-  width: 360px;
+  width: 100%;
+  max-width: 360px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
 }
 ul.social li {
   width: 24px;
   list-style-type: none;
-  display: inline-block;
   margin: 0 25px;
   box-sizing: border-box;
   text-align: center;
