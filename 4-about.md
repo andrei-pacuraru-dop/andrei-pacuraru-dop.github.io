@@ -9,7 +9,7 @@ menu: about
   <div class="wrapper">
     <div class="about-page">
       <div class="left">
-        <img src="assets/img/andrei.png">
+        <img src="assets/img/Andrei_Profile.jpg">
       </div>
       <div class="right">
         <p>Andrei Pacuraru is a meticulous, story driven Cinematographer working in narrative, drama, documentary, advertising and corporate under the umbrella of ShepherdTone- a London based creative cooperative he founded in 2015.</p>
