@@ -83,33 +83,39 @@ layout: default
 
    {% elsif page.collection == "commercial" %}
 
+     {% assign show_vids=3 %}
+
      {% for video in site.commercial reversed %}
-       {% assign mod = forloop.index0 | modulo : 3 %}
-       {% if mod == 0 %}
+       {% if forloop.index0 == show_vids %}
+          {% break %}
        {% endif %}
-       <a href="{{ video.url }}">
-         <img src="{{ video.thumb }}">
-         <h2 class="text-center">{{ video.title }}</h2>
-         <h4 class="text-center">Dir. {{ video.dir }}</h4>
-       </a>
-       {% if mod == 2 %}
-         {% break %}
+       {% if video.url != page.url %}
+           <a href="{{ video.url }}">
+           <img src="{{ video.thumb }}">
+           <h2 class="text-center">{{ video.title }}</h2>
+           <h4 class="text-center">Dir. {{ video.dir }}</h4>
+           </a>
+       {% else %}
+            {% assign show_vids = 4 %}
        {% endif %}
      {% endfor %}
 
    {% elsif page.collection == "narrative" %}
 
+     {% assign show_vids=3 %}
+
      {% for video in site.narrative reversed %}
-       {% assign mod = forloop.index0 | modulo : 3 %}
-       {% if mod == 0 %}
+       {% if forloop.index0 == show_vids %}
+          {% break %}
        {% endif %}
-       <a href="{{ video.url }}">
-         <img src="{{ video.thumb }}">
-         <h2 class="text-center">{{ video.title }}</h2>
-         <h4 class="text-center">Dir. {{ video.dir }}</h4>
-       </a>
-       {% if mod == 2 %}
-      {% break %}
+       {% if video.url != page.url %}
+           <a href="{{ video.url }}">
+           <img src="{{ video.thumb }}">
+           <h2 class="text-center">{{ video.title }}</h2>
+           <h4 class="text-center">Dir. {{ video.dir }}</h4>
+           </a>
+       {% else %}
+            {% assign show_vids = 4 %}
        {% endif %}
      {% endfor %}
 
