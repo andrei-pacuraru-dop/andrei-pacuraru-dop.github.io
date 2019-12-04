@@ -289,8 +289,8 @@ header, footer {
 }
 @media (min-width:900px) {
   .video-full {
-    margin-left: 7.5vw;
-    width: 85vw;
+    /*margin-left: 7.5vw;
+    width: 85vw;*/
   }
 }
 
